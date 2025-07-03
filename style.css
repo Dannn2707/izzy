@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: linear-gradient(#740000, #130000);
+}
+
+.section_pc{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.div_container_main{
+     width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_container{
+    width: 35%;
+    height: 70%;
+    display: flex;
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.only_one{
+    position: absolute;
+    top: 25%;
+    width: 400px;
+    z-index: -10;
+    animation: clouds 7s linear infinite;
+    transform: translateX(110vw);
+}
+
+
+.only_one_1{
+    position: absolute;
+    top: 5%;
+    width: 200px;
+    z-index: -10;
+    animation: clouds 8s linear infinite;
+    animation-delay: 3s;
+}
+
+.only_one_2{
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    z-index: -10;
+    animation: clouds 9s linear infinite;
+    animation-delay: 5s;
+}
+
+.only_one_3{
+    position: absolute;
+    top: 60%;
+    width: 100px;
+    z-index: -10;
+    animation: clouds 10s linear infinite;
+    animation-delay: 6s;
+}
+
+.only_one_4{
+    position: absolute;
+    top: 5%;
+    width: 200px;
+    z-index: -10;
+    animation: clouds 8s linear infinite;
+    animation-delay: 7s;
+}
+
+@keyframes clouds {
+    0%{
+        transform: translateX(110vw);
+    }
+
+    100%{
+        transform: translateX(-110vw);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.character_icon{
+    margin-top: 30px;
+    width: 150px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.div_container h2{
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.div_icons{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 2rem;
+    outline: 2px solid #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    transition: .1s;
+}
+
+.icon:hover{
+    outline-offset: 4px;
+    background-color: red;
+}
+
+.icon i{
+   
+}
+
+
+
+.div_icons img{
+    margin-top: 300px;
+    width: 40px;
+}
